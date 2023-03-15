@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./assets/fonts/Montserrat-Light.ttf') format('trueType');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+    url('./assets/fonts/Montserrat-SemiBold.ttf') format('trueType');
+}
+.print-remove {
+  display: flex;
+}
+
+
+
+@media print {
+  .print-source{
+    color:#333 !important;
+  }
+  .print-remove{
+    display: none !important;
+  }
+  
+}
